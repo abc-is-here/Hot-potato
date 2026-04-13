@@ -99,7 +99,7 @@ function App() {
             previous developer. You have 3 days to work on that game and pass it
             on!
           </p>
-          <img src="/sec2.png" alt="how-it-all-works image!!" className="w-[90%] mt-6" />
+          <img src="/how-to.png" alt="how-it-all-works image!!" className="w-[90%] mt-6" />
 
           <div className="max-w-3xl mx-auto mt-8">
             <p className="text-lg text-[#5a4747]">

@@ -7,9 +7,11 @@ function Faq_card({ question, answer, colour }) {
       style={{
         backgroundColor: colour,
         color: "#fff",
+        filter: "saturate(50%)",
       }}
     >
       <h3 className="text-3xl font-bold p-4">{question}</h3>
+      <hr></hr>
       <p className="text-xl p-4">{answer}</p>
     </div>
   );
@@ -76,19 +78,19 @@ function App() {
           </div>
         </div>
 
-        <div className="absolute bottom-30 inset-x-0 flex justify-center animate-bounce z-10">
-          <div className="p-3 w-64">
+        <div className="absolute bottom-5 inset-x-0 flex justify-center animate-bounce z-10 opacity-70">
+          <div className="p-3 w-128">
             <img src="/Arrow.PNG" alt="" />
           </div>
         </div>
       </div>
 
-      <section className="relative min-h-screen bg-[#fff3e6] py-20 px-6 text-center overflow-hidden">
+      <section className="relative min-h-screen bg-[#edcfad] py-20 px-6 text-center overflow-hidden">
         
-        <div className="absolute inset-0 bg-[radial-gradient(circle,_#e8caa4_2px,_transparent_2px)] [background-size:25px_25px] opacity-30" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle,_#fff4e8_4px,_transparent_4px)] [background-size:25px_25px] opacity-30" />
 
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold mb-16 text-[#2b1e1e]">
+          <h1 className="text-5xl font-bold mb-16 text-[#2b1e1e]">
             How It Works?
           </h1>
 
@@ -97,7 +99,7 @@ function App() {
             previous developer. You have 3 days to work on that game and pass it
             on!
           </p>
-          <img src="/How.PNG" alt="" className="w-full mt-6" />
+          <img src="/How.PNG" alt="" className="w-[90%] mt-6" />
 
           <div className="max-w-3xl mx-auto mt-8">
             <p className="text-lg text-[#5a4747]">
@@ -113,7 +115,7 @@ function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle,_#fff3e6_4px,_transparent_4px)] [background-size:15px_15px] opacity-40" />
 
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold mb-16 text-[#2b1e1e]">FAQ</h1>
+          <h1 className="text-5xl font-bold mb-16 text-[#2b1e1e]">FAQ</h1>
 
           <div className="flex items-center gap-4 flex-wrap justify-center">
             <Faq_card

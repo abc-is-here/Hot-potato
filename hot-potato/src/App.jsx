@@ -42,7 +42,7 @@ function App() {
           <div className="relative">
             <h1 className="text-5xl font-bold mb-2">H _ t Potato</h1>
             <img
-              src="/fire.GIF"
+              src="/fire.gif"
               alt=""
               className="absolute -left-9 -top-28 w-64 pointer-events-none"
             />
@@ -85,7 +85,7 @@ function App() {
 
       <section className="relative min-h-screen bg-[#fff3e6] py-20 px-6 text-center overflow-hidden">
         
-        <div className="absolute inset-0 bg-[radial-gradient(circle,_#e8caa4_15px,_transparent_15px)] [background-size:30px_30px] opacity-40" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle,_#e8caa4_2px,_transparent_2px)] [background-size:25px_25px] opacity-30" />
 
         <div className="relative z-10">
           <h1 className="text-4xl font-bold mb-16 text-[#2b1e1e]">
@@ -97,7 +97,6 @@ function App() {
             previous developer. You have 3 days to work on that game and pass it
             on!
           </p>
-
           <img src="/How.PNG" alt="" className="w-full mt-6" />
 
           <div className="max-w-3xl mx-auto mt-8">

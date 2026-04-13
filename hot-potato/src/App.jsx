@@ -61,7 +61,7 @@ function App() {
               className="px-5 py-3 rounded-xl border-4 border-[#d88c4a] bg-white w-72 focus:outline-none shadow-md"
             />
 
-            <button className="bg-[#d88c4a] hover:bg-[#c67634] text-white px-6 py-3 rounded-xl font-semibold shadow-md transition">
+            <button className="bg-[#d88c4a] hover:bg-[#c67634] text-white px-6 py-3 rounded-xl font-semibold shadow-md text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000] transition">
               Get Started
             </button>
           </div>
@@ -99,7 +99,7 @@ function App() {
             previous developer. You have 3 days to work on that game and pass it
             on!
           </p>
-          <img src="/How.PNG" alt="" className="w-[90%] mt-6" />
+          <img src="/How.PNG" alt="how-it-all-works image!!" className="w-[90%] mt-6" />
 
           <div className="max-w-3xl mx-auto mt-8">
             <p className="text-lg text-[#5a4747]">

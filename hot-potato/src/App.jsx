@@ -44,7 +44,7 @@ function App() {
           <div className="relative">
             <h1 className="text-5xl font-bold mb-2">H _ t Potato</h1>
             <img
-              src="/fire.gif"
+              src="/fire.GIF"
               alt="I made a fiery animation woohoo!!"
               className="absolute -left-9 -top-28 w-64 pointer-events-none"
             />

@@ -1,18 +1,21 @@
 import "./App.css";
 
-function Faq_card({ question, answer, colour }) {
+function Faq_card({ question, answer, image }) {
   return (
-    <div
-      className="relative w-96 h-88 rounded-2xl shadow-xl border-4 border-white/30 overflow-hidden p-4 transform hover:scale-105 transition"
-      style={{
-        backgroundColor: colour,
-        color: "#fff",
-        filter: "saturate(50%)",
-      }}
-    >
-      <h3 className="text-3xl font-bold p-4">{question}</h3>
-      <hr></hr>
-      <p className="text-xl p-4">{answer}</p>
+    <div className="relative w-100 h-100 rounded-2xl overflow-hidden transform hover:scale-105 hover:-translate-y-2 transition">
+
+      <img
+        src={image}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover -z-10 opacity-90"
+      />
+
+      <div className="relative z-10 p-4 text-white top-20 left-7 w-[90%]">
+        <h3 className="text-3xl font-bold mb-2 text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000]">{question}</h3>
+        <hr className="border-white/40 mb-2" />
+        <p className="text-2xl text-shadow-[1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000]">{answer}</p>
+      </div>
+
     </div>
   );
 }
@@ -90,19 +93,23 @@ function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle,_#fff4e8_4px,_transparent_4px)] [background-size:25px_25px] opacity-30" />
 
         <div className="relative z-10">
-          <h1 className="text-5xl font-bold mb-16 text-[#2b1e1e]">
+          <div>
+          <img src="/Text-bg.png" alt="" className="absolute inset-0 mx-auto -z-10 w-120 -top-25 left-10 opacity-90" />
+          <h1 className="text-5xl font-bold mb-16 text-white -rotate-10">
             How It Works?
           </h1>
 
-          <p className="text-sm text-[#5a4747]">
+          </div>
+
+          <p className="text-xl text-[#5a4747] bg-white rounded-xl p-2 outline-black outline-4">
             Every 3 Days, you are assigned a new game + a handoff note from the
-            previous developer. You have 3 days to work on that game and pass it
+            previous developer.<br></br> You have 3 days to work on that game and pass it
             on!
           </p>
-          <img src="/how-to.png" alt="how-it-all-works image!!" className="w-[90%] mt-6" />
+          <img src="/how-2.png" alt="how-it-all-works image!!" className="w-[90%] mt-6" />
 
           <div className="max-w-3xl mx-auto mt-8">
-            <p className="text-lg text-[#5a4747]">
+            <p className="text-lg text-[#5a4747] bg-white rounded-xl p-2 outline-black outline-4">
               After 3 weeks, all the projects will be shipped publicly with an
               itch.io link and a Github repo!
             </p>
@@ -115,23 +122,29 @@ function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle,_#fff3e6_4px,_transparent_4px)] [background-size:15px_15px] opacity-40" />
 
         <div className="relative z-10">
-          <h1 className="text-5xl font-bold mb-16 text-[#2b1e1e]">FAQ</h1>
+        <div>
+          <img src="/Text-bg.png" alt="" className="absolute inset-0 mx-auto -z-10 w-120 -top-25 left-10 opacity-90" />
+          <h1 className="text-5xl font-bold mb-16 text-white -rotate-10">
+            FAQs
+          </h1>
 
-          <div className="flex items-center gap-4 flex-wrap justify-center">
+          </div>
+
+          <div className="flex items-center gap-4 flex-wrap justify-center mt-16">
             <Faq_card
               question="Who is eligible?"
               answer="Hot Potato is for highschoolers! You need to be 13-18 years old to participate."
-              colour="#ff6b6b"
+              image="/faq-bg-1.png"
             />
             <Faq_card
               question="How much does it cost?"
               answer="100% free - all the prizes are donated to us or paid for by us!"
-              colour="#4ecdc4"
+              image="/faq-bg-3.png"
             />
             <Faq_card
               question="What types of projects count?"
               answer="Any Godot Project as long as it's open source!"
-              colour="#ffd93d"
+              image="/faq-bg-4.png"
             />
             <Faq_card
               question="Is this legit?"
@@ -142,30 +155,29 @@ function App() {
                     href="https://ysws.hackclub.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline font-semibold hover:text-black transition"
+                    className="underline font-semibold hover:text-blue-500 transition"
                   >
                     Other YSWS's
                   </a>
                 </>
               }
-              colour="#00bbf9"
+              image="/faq-bg-2.png"
             />
             <Faq_card
               question="Have more questions?"
               answer="You can email us at abhaygupta.hsj@gmail.com! We'll try and respond to everything within 24 hours :)"
-              colour="#6c5ce7"
+              image="/faq-bg-5.png"
             />
           </div>
         </div>
       </section>
 
-      <footer className="relative bg-[#fff3e6] text-[#2b1e1e] overflow-hidden">
-        
-        <div className="absolute inset-0 bg-[radial-gradient(circle,_#e8caa4_1px,_transparent_1px)] [background-size:25px_25px] opacity-20" />
+      <footer className="relative bg-[#F6E3CC] text-[#2b1e1e]">
 
-        <p className="relative z-10 text-center p-4 text-xl">
+        <p className="relative z-10 text-center p-4 text-xl text-white">
           Made with &#10083; by Abhay
         </p>
+      <img src="/footer-bg.png" alt="" className="absolute left-150 w-64 bottom-0"/>
       </footer>
     </div>
   );

@@ -118,7 +118,7 @@ function App() {
       </section>
 
       <section className="relative min-h-screen bg-[#F6E3CC] py-20 px-6 text-center overflow-hidden">
-        
+        <img src="/fun.png" alt="" className="absolute w-64 rotate-90 -left-10 bottom-20 z-5"/>
         <div className="absolute inset-0 bg-[radial-gradient(circle,_#fff3e6_4px,_transparent_4px)] [background-size:15px_15px] opacity-40" />
 
         <div className="relative z-10">
@@ -177,7 +177,7 @@ function App() {
         <p className="relative z-10 text-center p-4 text-xl text-white">
           Made with &#10083; by Abhay
         </p>
-      <img src="/footer-bg.png" alt="" className="absolute left-150 w-64 bottom-0"/>
+      <img src="/footer-bg.png" alt="" className="absolute left-[41%] w-64 bottom-0"/>
       </footer>
     </div>
   );
